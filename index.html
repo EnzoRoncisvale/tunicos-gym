@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tunico's Gym | Unidades em Brasília, DF e Região | 7 Dias Grátis</title>
+    <meta name="description" content="Encontre a Tunico's Gym mais perto de você: Águas Claras, Asa Sul, Asa Norte, Sudoeste e mais de 30 unidades. Musculação, Lutas, Spinning e Danças. Resgate seu Free Pass de 7 dias grátis!">
+    
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Tunico's Gym | Mais de 30 Unidades | 7 Dias Grátis">
+    <meta property="og:description" content="Musculação de alta performance, aulas coletivas completas e infraestrutura de ponta. Garanta seu Free Pass de 7 dias na Tunico's Gym!">
+    
+    <!-- Google Fonts: Bebas Neue for punchy bold headers & Plus Jakarta Sans for sleek modern body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23000'/><text x='50' y='68' font-size='52' font-weight='900' font-family='sans-serif' fill='%23fff' text-anchor='middle'>TG</text></svg>">
+</head>
+<body>
+
+    <!-- TOP PROMO BANNER -->
+    <div class="top-promo-banner" id="promoBanner">
+        <div class="container top-promo-content">
+            <div class="promo-text">
+                <span class="promo-badge">OFERTA 2026</span>
+                <strong>PRIMEIRO MÊS PLANO FIT POR R$ 39,90</strong>
+                <span class="promo-divider">•</span>
+                <span class="promo-sub">7 Dias de Free Pass exclusivo para novos alunos!</span>
+            </div>
+            <div class="promo-countdown">
+                <span class="countdown-label">Termina em:</span>
+                <span id="countdownTimer" class="countdown-digits">05h 42m 19s</span>
+            </div>
+            <a href="#freepass" class="promo-link-btn">RESGATAR AGORA</a>
+        </div>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <header class="site-header" id="navbar">
+        <div class="container header-container">
+            <a href="#" class="brand-logo" aria-label="Tunico's Gym Página Inicial">
+                <div class="logo-mark">
+                    <svg viewBox="0 0 40 40" width="34" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="8" fill="#ffffff"/>
+                        <path d="M9 13H31V17H22V29H18V17H9V13Z" fill="#000000"/>
+                        <path d="M24 21H31V29H24V21Z" fill="#000000"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">TUNICO'S</span>
+                    <span class="logo-sub">GYM • FITNESS CLUB</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#unidades" class="nav-link">Unidades</a></li>
+                    <li><a href="#aulas" class="nav-link">Aulas & Treinos</a></li>
+                    <li><a href="#filosofia" class="nav-link">Sobre</a></li>
+                    <li><a href="#planos" class="nav-link">Planos</a></li>
+                    <li><a href="#faq" class="nav-link">Dúvidas</a></li>
+                </ul>
+                <div class="mobile-nav-cta">
+                    <a href="#freepass" class="btn btn-primary btn-block">COMECE AGORA</a>
+                </div>
+            </nav>
+
+            <div class="header-actions">
+                <a href="https://wa.me/5561998535380?text=Ol%C3%A1,%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20Tunico's%20Gym" target="_blank" rel="noopener noreferrer" class="whatsapp-nav-btn" title="Fale pelo WhatsApp">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.599 2.679-.702c.972.531 1.77.818 2.781.818h.002c3.18 0 5.767-2.586 5.768-5.766.001-3.181-2.585-5.767-5.768-5.767zm7.505 5.767c-.002 4.139-3.368 7.505-7.507 7.505-.002 0-.003 0-.005 0-1.258 0-2.433-.314-3.511-.908l-4.513 1.183 1.207-4.412c-.657-1.127-1.006-2.417-1.006-3.738 0-4.139 3.367-7.505 7.506-7.505 4.14 0 7.507 3.366 7.507 7.505z"/>
+                    </svg>
+                    <span>Suporte</span>
+                </a>
+                <a href="#freepass" class="btn btn-primary header-cta">COMECE AGORA</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-bg" style="background-image: url('https://framerusercontent.com/images/b0YmzLKg7zyrsitY3OiO1XHBI.jpg?width=2048&height=1365');"></div>
+            
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-pill-badge">
+                        <span class="badge-dot"></span>
+                        <span>EXPERIMENTE EVOLUIR EM 2026</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        O SEU CORPO NÃO ESPERA.<br>
+                        <span class="hero-title-highlight">BEM-VINDO À TUNICO'S GYM.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Primeiro mês no <strong>Plano FIT por apenas R$ 39,90</strong>. Mais de 30 unidades de alto padrão no DF e região, com musculação pesada, lutas, spinning imersivo e aulas de dança. 
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#freepass" class="btn btn-primary btn-lg">
+                            <span>GARANTIR 7 DIAS GRÁTIS</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="#unidades" class="btn btn-outline btn-lg">
+                            <span>ENCONTRAR UNIDADE</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-number">30+</span>
+                            <span class="highlight-label">Unidades no DF e Região</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-number">100%</span>
+                            <span class="highlight-label">Equipamentos Biomecânicos</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-number">7 DIAS</span>
+                            <span class="highlight-label">Free Pass Sem Custo</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-number">4.9 ★</span>
+                            <span class="highlight-label">Nota dos Nossos Alunos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SPECIAL PROMO BAR CARD -->
+        <section class="promo-spotlight-section">
+            <div class="container">
+                <div class="promo-spotlight-card">
+                    <div class="spotlight-left">
+                        <div class="spotlight-tag">CONDIÇÃO ESPECIAL DE MATRÍCULA</div>
+                        <h2 class="spotlight-title">PRIMEIRO MÊS PLANO FIT R$ 39,90</h2>
+                        <p class="spotlight-desc">
+                            Valor promocional válido exclusivamente para a primeira mensalidade de novos alunos cadastrados através do site. Garanta sua vaga hoje mesmo!
+                        </p>
+                    </div>
+                    <div class="spotlight-right">
+                        <div class="spotlight-price-box">
+                            <span class="price-from">De R$ 119,90 por</span>
+                            <span class="price-current">R$ 39<small>,90</small></span>
+                            <span class="price-condition">no 1º mês • Sem taxa oculta</span>
+                        </div>
+                        <a href="#freepass" class="btn btn-primary btn-block spotlight-btn">QUERO ESSA OFERTA</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: UNIDADES (UNITS LOCATOR) -->
+        <section class="units-section section-padding" id="unidades">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-badge">ONDE ESTAMOS</span>
+                    <h2 class="section-title">UNIDADES PERTO DE VOCÊ</h2>
+                    <p class="section-subtitle">
+                        Encontre a Tunico's Gym mais próxima da sua casa ou trabalho. Treine onde e quando quiser com a melhor estrutura.
+                    </p>
+                </div>
+
+                <!-- Search & Filter Controls -->
+                <div class="units-controls">
+                    <div class="search-box">
+                        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <input type="text" id="unitSearchInput" placeholder="Buscar por bairro, cidade ou região (ex: Asa Sul, Taguatinga, Águas Claras...)" autocomplete="off">
+                        <button id="clearSearchBtn" class="clear-search-btn" title="Limpar busca">&times;</button>
+                    </div>
+
+                    <div class="filter-tabs" id="filterTabs">
+                        <button class="filter-tab active" data-filter="all">Todas as Unidades (<span id="countAll">31</span>)</button>
+                        <button class="filter-tab" data-filter="df">Distrito Federal (<span id="countDf">22</span>)</button>
+                        <button class="filter-tab" data-filter="go">Goiás & Entorno (<span id="countGo">8</span>)</button>
+                        <button class="filter-tab" data-filter="ba">Bahia (<span id="countBa">1</span>)</button>
+                    </div>
+                </div>
+
+                <!-- Units Grid -->
+                <div class="units-grid" id="unitsGrid">
+                    <!-- Cards will be populated by JavaScript with full details -->
+                </div>
+
+                <div class="units-footer-cta">
+                    <p>Não encontrou sua cidade? Estamos em franca expansão pelo Brasil!</p>
+                    <a href="https://wa.me/5561998535380?text=Ol%C3%A1,%20gostaria%20de%20sugerir%20uma%20nova%20unidade%20da%20Tunico's%20Gym" target="_blank" class="btn btn-outline">
+                        Sugerir nova unidade no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: MANIFESTO / PHILOSOPHY -->
+        <section class="manifesto-section" id="filosofia">
+            <div class="container">
+                <div class="manifesto-grid">
+                    <div class="manifesto-visual">
+                        <div class="manifesto-img-wrapper">
+                            <img src="https://framerusercontent.com/images/JrC6fWM14sKdXrw5h2O51XOsvaU.jpg?width=1220&height=1212" alt="Alunos Tunico's Gym treinando com intensidade" class="manifesto-img" loading="lazy">
+                            <div class="manifesto-tag-overlay">
+                                <span>#TUNICOSSTYLE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="manifesto-content">
+                        <span class="section-badge">NOSSA ESSÊNCIA</span>
+                        <h2 class="section-title">IGUAL A VOCÊ, DIFERENTE.</h2>
+                        
+                        <p class="manifesto-lead">
+                            Diversidade não é algo a ser apenas aceito, mas sim compartilhado. Nós somos a própria diversidade.
+                        </p>
+                        
+                        <p class="manifesto-body">
+                            Somos diversos nos objetivos, motivações, decisões e aparência. Não há outro como você, e esse é seu principal valor. Faça parte da família <strong>Tunico's Gym</strong>. Aqui, especial é ser você mesmo, com treino sério, ambiente acolhedor e zero frescura!
+                        </p>
+
+                        <div class="manifesto-features">
+                            <div class="m-feature-card">
+                                <div class="m-icon">⚡</div>
+                                <div>
+                                    <h4>Estrutura Monstruosa</h4>
+                                    <p>Maquinário biomecânico importado para você extrair o máximo do seu potencial.</p>
+                                </div>
+                            </div>
+                            <div class="m-feature-card">
+                                <div class="m-icon">🎯</div>
+                                <div>
+                                    <h4>Acompanhamento Real</h4>
+                                    <p>Professores qualificados no salão para ajustar sua postura e garantir evolução segura.</p>
+                                </div>
+                            </div>
+                            <div class="m-feature-card">
+                                <div class="m-icon">🔥</div>
+                                <div>
+                                    <h4>Energia Incomparável</h4>
+                                    <p>Ambiente moderno, iluminação estilizada e playlist focada no seu ritmo.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="manifesto-cta">
+                            <a href="#freepass" class="btn btn-primary">VENHA VIVER ESSA EXPERIÊNCIA</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: AULAS & MODALIDADES -->
+        <section class="classes-section section-padding" id="aulas">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-badge">MODALIDADES COLETIVAS</span>
+                    <h2 class="section-title">AULAS TUNICO'S GYM</h2>
+                    <p class="section-subtitle">
+                        Diversifique seus treinos, queime calorias e se divirta com as aulas coletivas mais animadas de Brasília.
+                    </p>
+                </div>
+
+                <div class="classes-grid">
+                    <!-- Class 1 -->
+                    <div class="class-card">
+                        <div class="class-img-box">
+                            <img src="https://framerusercontent.com/images/YfDbkB52wOoCSoObsYqICNWEMiU.jpg?width=1920&height=1304" alt="Aula de Dança na Tunico's Gym" loading="lazy">
+                            <span class="class-duration">50 min</span>
+                        </div>
+                        <div class="class-content">
+                            <div class="class-header-row">
+                                <h3 class="class-name">DANÇAS & RITMOS</h3>
+                                <span class="class-intensity">Média • ~500 kcal</span>
+                            </div>
+                            <p class="class-desc">
+                                Libere o estresse, aprenda coreografias contagiantes e queime calorias ao som dos hits do momento (FitDance, Zumba e Ritmos).
+                            </p>
+                            <button class="btn btn-outline btn-sm open-class-modal" data-class="dancas">Ver Horários & Detalhes</button>
+                        </div>
+                    </div>
+
+                    <!-- Class 2 -->
+                    <div class="class-card">
+                        <div class="class-img-box">
+                            <img src="https://framerusercontent.com/images/opBEMexRy7Xi9rfZpZIihx6A.jpg?width=1920&height=1304" alt="Aula de Spinning Indoor Cycle" loading="lazy">
+                            <span class="class-duration">45 min</span>
+                        </div>
+                        <div class="class-content">
+                            <div class="class-header-row">
+                                <h3 class="class-name">SPINNING CYCLE</h3>
+                                <span class="class-intensity">Alta • ~750 kcal</span>
+                            </div>
+                            <p class="class-desc">
+                                Sala imersiva com luzes dinâmicas e som potente. Desafie seus limites em subidas virtuais e sprints alucinantes com nossos instrutores.
+                            </p>
+                            <button class="btn btn-outline btn-sm open-class-modal" data-class="spinning">Ver Horários & Detalhes</button>
+                        </div>
+                    </div>
+
+                    <!-- Class 3 -->
+                    <div class="class-card">
+                        <div class="class-img-box">
+                            <img src="https://framerusercontent.com/images/SP9kPz4YGYgD7Kv9bhMeCAjgiEg.jpg?width=2048&height=1365" alt="Aulas de Lutas Muay Thai e Boxe" loading="lazy">
+                            <span class="class-duration">60 min</span>
+                        </div>
+                        <div class="class-content">
+                            <div class="class-header-row">
+                                <h3 class="class-name">LUTAS & ARTES MARCIAIS</h3>
+                                <span class="class-intensity">Intensa • ~800 kcal</span>
+                            </div>
+                            <p class="class-desc">
+                                Muay Thai, Jiu-Jitsu e Boxe com mestres graduados. Ganhe disciplina, condicionamento físico extremo, defesa pessoal e força muscular.
+                            </p>
+                            <button class="btn btn-outline btn-sm open-class-modal" data-class="lutas">Ver Horários & Detalhes</button>
+                        </div>
+                    </div>
+
+                    <!-- Class 4 -->
+                    <div class="class-card">
+                        <div class="class-img-box">
+                            <img src="https://framerusercontent.com/images/q6OUgBSDZ6Yjlnj0aACBn0mlGzI.webp?width=6996&height=4664" alt="Treino Funcional e HIIT" loading="lazy">
+                            <span class="class-duration">40 min</span>
+                        </div>
+                        <div class="class-content">
+                            <div class="class-header-row">
+                                <h3 class="class-name">AERÓBICOS & HIIT</h3>
+                                <span class="class-intensity">Alta • ~650 kcal</span>
+                            </div>
+                            <p class="class-desc">
+                                Circuitos intensos de treinamento funcional que aceleram o metabolismo por até 24 horas após o término do treino.
+                            </p>
+                            <button class="btn btn-outline btn-sm open-class-modal" data-class="aerobicos">Ver Horários & Detalhes</button>
+                        </div>
+                    </div>
+
+                    <!-- Class 5 -->
+                    <div class="class-card">
+                        <div class="class-img-box">
+                            <img src="https://framerusercontent.com/images/daB2MXVrmt0YUj8nUK83Cbcrd4.webp?width=1402&height=934" alt="Aula de Alongamento e Flexibilidade" loading="lazy">
+                            <span class="class-duration">30 min</span>
+                        </div>
+                        <div class="class-content">
+                            <div class="class-header-row">
+                                <h3 class="class-name">ALONGAMENTO & MOBILIDADE</h3>
+                                <span class="class-intensity">Leve • Recuperação</span>
+                            </div>
+                            <p class="class-desc">
+                                Prevenção de lesões, ganho de amplitude articular, alívio de dores posturais e relaxamento profundo pós-treino.
+                            </p>
+                            <button class="btn btn-outline btn-sm open-class-modal" data-class="alongamento">Ver Horários & Detalhes</button>
+                        </div>
+                    </div>
+
+                    <!-- Class 6 -->
+                    <div class="class-card">
+                        <div class="class-img-box">
+                            <img src="https://framerusercontent.com/images/BPYXzbhrVMiwJPvxvBkG9dHQ.jpg?width=2048&height=1365" alt="Treino de Abdominal e Core" loading="lazy">
+                            <span class="class-duration">30 min</span>
+                        </div>
+                        <div class="class-content">
+                            <div class="class-header-row">
+                                <h3 class="class-name">ABDOMINAL & CORE</h3>
+                                <span class="class-intensity">Média • Definição</span>
+                            </div>
+                            <p class="class-desc">
+                                Foco no fortalecimento do abdômen, assoalho pélvico e região lombar para sustentação do corpo e abdômen definido.
+                            </p>
+                            <button class="btn btn-outline btn-sm open-class-modal" data-class="abdominal">Ver Horários & Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="classes-cta-box text-center">
+                    <p>Todas as modalidades coletivas estão 100% inclusas no <strong>Plano Black da Tunico's Gym</strong> sem cobrança extra!</p>
+                    <a href="#freepass" class="btn btn-primary">EXPERIMENTAR QUALQUER AULA GRÁTIS</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: FREE PASS / EXPERIMENTAL CLASS FORM -->
+        <section class="freepass-section section-padding" id="freepass">
+            <div class="container">
+                <div class="freepass-card">
+                    <div class="freepass-grid">
+                        <div class="freepass-info">
+                            <span class="section-badge">SETE DIAS POR NOSSA CONTA</span>
+                            <h2 class="freepass-title">AGENDE SUA AULA EXPERIMENTAL</h2>
+                            
+                            <p class="freepass-text">
+                                <strong>Nada de desculpas!</strong> É hora de começar. Venha conhecer de perto a estrutura, os aparelhos e o astral da Tunico's Gym.
+                            </p>
+
+                            <div class="freepass-benefits">
+                                <div class="f-benefit">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span>Acesso livre durante 7 dias seguidos</span>
+                                </div>
+                                <div class="f-benefit">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span>Participe de qualquer aula coletiva da grade</span>
+                                </div>
+                                <div class="f-benefit">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span>Sem necessidade de cartão de crédito no cadastro</span>
+                                </div>
+                                <div class="f-benefit">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span>Confirmação e voucher instantâneo via WhatsApp</span>
+                                </div>
+                            </div>
+
+                            <div class="freepass-trust-badge">
+                                <div class="stars">★★★★★</div>
+                                <p>Mais de 15.000 alunos já começaram com o Free Pass da Tunico's Gym!</p>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Form -->
+                        <div class="freepass-form-wrapper">
+                            <div class="form-header">
+                                <h3>PREENCHA PARA LIBERAR SEU ACESSO</h3>
+                                <p>Leva menos de 1 minuto</p>
+                            </div>
+
+                            <form id="freePassForm" class="freepass-form" novalidate>
+                                <div class="form-group">
+                                    <label for="fullName">Nome Completo *</label>
+                                    <input type="text" id="fullName" name="fullName" placeholder="Ex: Roberto Tunico de Alencar" required>
+                                    <span class="error-msg" id="nameError">Por favor, informe seu nome.</span>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="phoneWhatsApp">WhatsApp com DDD *</label>
+                                        <input type="tel" id="phoneWhatsApp" name="phoneWhatsApp" placeholder="(61) 99999-9999" required>
+                                        <span class="error-msg" id="phoneError">Informe um número de WhatsApp válido.</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="userEmail">Seu Melhor E-mail *</label>
+                                        <input type="email" id="userEmail" name="userEmail" placeholder="seuemail@exemplo.com" required>
+                                        <span class="error-msg" id="emailError">Informe um e-mail válido.</span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="preferredUnit">Unidade Onde Deseja Treinar *</label>
+                                    <select id="preferredUnit" name="preferredUnit" required>
+                                        <option value="" disabled selected>Selecione a unidade mais próxima...</option>
+                                        <optgroup label="Distrito Federal">
+                                            <option value="Tunico's Gym - Asa Sul">Tunico's Gym - Asa Sul (DF)</option>
+                                            <option value="Tunico's Gym - Asa Norte">Tunico's Gym - Asa Norte (DF)</option>
+                                            <option value="Tunico's Gym - Sudoeste">Tunico's Gym - Sudoeste (DF)</option>
+                                            <option value="Tunico's Gym - Noroeste">Tunico's Gym - Noroeste (DF)</option>
+                                            <option value="Tunico's Gym - Águas Claras 1">Tunico's Gym - Águas Claras 1 (DF)</option>
+                                            <option value="Tunico's Gym - Águas Claras 2">Tunico's Gym - Águas Claras 2 (DF)</option>
+                                            <option value="Tunico's Gym - Taguatinga Centro">Tunico's Gym - Taguatinga Centro (DF)</option>
+                                            <option value="Tunico's Gym - Taguatinga II">Tunico's Gym - Taguatinga II (DF)</option>
+                                            <option value="Tunico's Gym - Vicente Pires">Tunico's Gym - Vicente Pires (DF)</option>
+                                            <option value="Tunico's Gym - Guará">Tunico's Gym - Guará (DF)</option>
+                                            <option value="Tunico's Gym - Sobradinho">Tunico's Gym - Sobradinho (DF)</option>
+                                            <option value="Tunico's Gym - Samambaia">Tunico's Gym - Samambaia (DF)</option>
+                                            <option value="Tunico's Gym - Ceilândia">Tunico's Gym - Ceilândia (DF)</option>
+                                            <option value="Tunico's Gym - Gama">Tunico's Gym - Gama (DF)</option>
+                                            <option value="Tunico's Gym - Brasil 21">Tunico's Gym - Brasil 21 (DF)</option>
+                                            <option value="Tunico's Gym - Jardim Botânico">Tunico's Gym - Jardim Botânico (DF)</option>
+                                            <option value="Tunico's Gym - Planaltina">Tunico's Gym - Planaltina (DF)</option>
+                                        </optgroup>
+                                        <optgroup label="Goiás & Região">
+                                            <option value="Tunico's Gym - Valparaíso de Goiás">Tunico's Gym - Valparaíso de Goiás (GO)</option>
+                                            <option value="Tunico's Gym - Goiânia">Tunico's Gym - Goiânia (GO)</option>
+                                            <option value="Tunico's Gym - Anápolis">Tunico's Gym - Anápolis (GO)</option>
+                                            <option value="Tunico's Gym - Águas Lindas">Tunico's Gym - Águas Lindas (GO)</option>
+                                            <option value="Tunico's Gym - Luziânia">Tunico's Gym - Luziânia (GO)</option>
+                                            <option value="Tunico's Gym - Formosa">Tunico's Gym - Formosa (GO)</option>
+                                            <option value="Tunico's Gym - Rio Verde">Tunico's Gym - Rio Verde (GO)</option>
+                                        </optgroup>
+                                        <optgroup label="Bahia">
+                                            <option value="Tunico's Gym - Luís Eduardo Magalhães">Tunico's Gym - LEM (BA)</option>
+                                        </optgroup>
+                                    </select>
+                                    <span class="error-msg" id="unitError">Selecione uma unidade.</span>
+                                </div>
+
+                                <div class="form-group checkbox-group">
+                                    <input type="checkbox" id="termsCheck" required checked>
+                                    <label for="termsCheck">
+                                        Concordo em receber meu voucher de 7 Dias Grátis no WhatsApp e autorizo contato da equipe Tunico's Gym.
+                                    </label>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitFreePass">
+                                    <span>EU QUERO MEU FREE PASS!</span>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </button>
+                                
+                                <p class="privacy-note">🔒 Seus dados estão 100% seguros. Não enviamos spam.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: PLANOS & PREÇOS -->
+        <section class="plans-section section-padding" id="planos">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-badge">INVESTIMENTO</span>
+                    <h2 class="section-title">PLANOS QUE CABEM NO SEU BOLSO</h2>
+                    <p class="section-subtitle">
+                        Treine sem amarras com planos acessíveis e transparentes. Escolha a opção ideal para a sua rotina.
+                    </p>
+                </div>
+
+                <div class="plans-grid">
+                    <!-- Plano FIT -->
+                    <div class="plan-card">
+                        <div class="plan-header">
+                            <span class="plan-type">ENTRADA</span>
+                            <h3 class="plan-title">PLANO FIT</h3>
+                            <p class="plan-brief">Perfeito para quem foca na musculação da sua unidade favorita.</p>
+                            <div class="plan-price">
+                                <span class="currency">R$</span>
+                                <span class="amount">39</span>
+                                <span class="cents">,90</span>
+                                <span class="period">/1º mês*</span>
+                            </div>
+                            <span class="plan-renews">Após, apenas R$ 119,90/mês</span>
+                        </div>
+
+                        <div class="plan-body">
+                            <ul class="plan-features">
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    Acesso total à musculação e área cardio
+                                </li>
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    Treine na sua unidade de matrícula
+                                </li>
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    Avaliação física inicial
+                                </li>
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    App Tunico's Gym com ficha de treino
+                                </li>
+                                <li class="disabled">
+                                    <span class="cross-icon">✕</span>
+                                    Acesso a todas as 30+ unidades
+                                </li>
+                                <li class="disabled">
+                                    <span class="cross-icon">✕</span>
+                                    Aulas coletivas e spinning
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="plan-footer">
+                            <a href="#freepass" class="btn btn-outline btn-block">MATRICULAR NO FIT</a>
+                        </div>
+                    </div>
+
+                    <!-- Plano BLACK (DESTAQUE) -->
+                    <div class="plan-card featured">
+                        <div class="featured-ribbon">MAIS POPULAR</div>
+                        <div class="plan-header">
+                            <span class="plan-type">EXPERIÊNCIA TOTAL</span>
+                            <h3 class="plan-title">PLANO BLACK</h3>
+                            <p class="plan-brief">Acesso irrestrito a todas as unidades e todas as aulas coletivas.</p>
+                            <div class="plan-price">
+                                <span class="currency">R$</span>
+                                <span class="amount">139</span>
+                                <span class="cents">,90</span>
+                                <span class="period">/mês</span>
+                            </div>
+                            <span class="plan-renews">Sem taxa de matrícula promocional</span>
+                        </div>
+
+                        <div class="plan-body">
+                            <ul class="plan-features">
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    <strong>Acesso a mais de 30 unidades Tunico's Gym</strong>
+                                </li>
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    <strong>Todas as aulas coletivas</strong> (Spinning, Lutas, Danças)
+                                </li>
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    Leve até 5 amigos por mês para treinar junto
+                                </li>
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    Cadeiras de massagem e Recovery Zone
+                                </li>
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    Acesso ao Tunico's Gym App Pro
+                                </li>
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    Sem fidelidade abusiva
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="plan-footer">
+                            <a href="#freepass" class="btn btn-primary btn-block">ASSINAR PLANO BLACK</a>
+                        </div>
+                    </div>
+
+                    <!-- Plano VIP PASSAPORTE -->
+                    <div class="plan-card">
+                        <div class="plan-header">
+                            <span class="plan-type">PREMIUM</span>
+                            <h3 class="plan-title">PASSAPORTE VIP</h3>
+                            <p class="plan-brief">Para quem busca acompanhamento nutricional e benefícios de luxo.</p>
+                            <div class="plan-price">
+                                <span class="currency">R$</span>
+                                <span class="amount">189</span>
+                                <span class="cents">,90</span>
+                                <span class="period">/mês</span>
+                            </div>
+                            <span class="plan-renews">Experiência completa Tunico's</span>
+                        </div>
+
+                        <div class="plan-body">
+                            <ul class="plan-features">
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    Tudo incluso do Plano Black em qualquer unidade
+                                </li>
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    Bioimpedância mensal computadorizada
+                                </li>
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    Consulta e plano alimentar trimestral
+                                </li>
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    Armário fixo e toalha exclusiva Tunico's
+                                </li>
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    Desconto de 20% na loja de suplementos
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="plan-footer">
+                            <a href="#freepass" class="btn btn-outline btn-block">MATRICULAR VIP</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plan-disclaimer text-center">
+                    <p>*Promoção do Plano FIT válida exclusivamente para novas matrículas até 31/01/2026. Consulte condições contratuais na unidade.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: DEPOIMENTOS / SOCIAL PROOF -->
+        <section class="testimonials-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-badge">QUEM TREINA, RECOMENDA</span>
+                    <h2 class="section-title">HISTÓRIAS DE SUPERAÇÃO</h2>
+                    <p class="section-subtitle">Veja o que os membros da comunidade Tunico's Gym dizem sobre nós.</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-quote">
+                            "A melhor academia de Brasília sem dúvidas! Os aparelhos da Asa Sul são impecáveis e os professores realmente te dão atenção. Perdi 14kg em 6 meses com o acompanhamento deles."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MS</div>
+                            <div>
+                                <h4 class="author-name">Marcos Silva</h4>
+                                <span class="author-unit">Aluno Tunico's Asa Sul • 1 ano</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-quote">
+                            "A aula de Spinning da Tunico's Gym é indescritível! A energia da sala é eletrizante. O plano Black compensa demais, treino em Taguatinga perto de casa e no Plano Piloto perto do trabalho."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">CR</div>
+                            <div>
+                                <h4 class="author-name">Camila Ribeiro</h4>
+                                <span class="author-unit">Aluna Tunico's Taguatinga • 8 meses</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-quote">
+                            "Comecei com o Free Pass de 7 dias sem botar muita fé, mas no terceiro dia já fiz a matrícula. O ambiente preto e branco é lindo, limpo e muito moderno. Não troco por nada!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">FA</div>
+                            <div>
+                                <h4 class="author-name">Felipe Albuquerque</h4>
+                                <span class="author-unit">Aluno Tunico's Águas Claras • 2 anos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: FAQ -->
+        <section class="faq-section section-padding" id="faq">
+            <div class="container faq-container">
+                <div class="section-header text-center">
+                    <span class="section-badge">TIRA-DÚVIDAS</span>
+                    <h2 class="section-title">PERGUNTAS FREQUENTES</h2>
+                    <p class="section-subtitle">Tudo o que você precisa saber antes de iniciar seus treinos.</p>
+                </div>
+
+                <div class="faq-accordion" id="faqAccordion">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Como funciona o Free Pass de 7 dias grátis?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Basta preencher o formulário nesta página com seu nome, WhatsApp e a unidade desejada. Você receberá um código voucher exclusivo no seu celular. Apresente-o na recepção com um documento com foto e seus 7 dias consecutivos de acesso livre serão ativados na hora, sem taxa nem pegadinha!</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Preciso cadastrar cartão de crédito para fazer o teste de 7 dias?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Não! O Free Pass é 100% gratuito e não exige nenhum dado financeiro ou cartão de crédito. Se você amar a experiência (e nós temos certeza que vai amar), você escolhe qual plano deseja assinar após os 7 dias.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>O que está incluído no Plano Black?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>O Plano Black oferece acesso ilimitado a todas as mais de 30 unidades da rede Tunico's Gym, participação em todas as modalidades coletivas (Spinning, Muay Thai, Dança, HIIT, Alongamento), 5 cortesias mensais para trazer amigos e acesso às cadeiras de massagem na área de relaxamento.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Qual é o horário de funcionamento das unidades?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>A maioria das nossas unidades opera de segunda a sexta das 06:00 às 23:00, aos sábados das 08:00 às 18:00 e aos domingos e feriados das 09:00 às 15:00. Unidades selecionadas no Plano Piloto possuem horário 24 horas.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Menores de 18 anos podem treinar na Tunico's Gym?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim! A idade mínima para treino é de 14 anos, mediante autorização por escrito e assinatura presencial dos pais ou responsáveis legais na recepção da unidade.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-top-grid">
+                <!-- Col 1: Brand & About -->
+                <div class="footer-col brand-col">
+                    <div class="footer-logo">
+                        <div class="logo-mark">
+                            <svg viewBox="0 0 40 40" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="40" height="40" rx="8" fill="#ffffff"/>
+                                <path d="M9 13H31V17H22V29H18V17H9V13Z" fill="#000000"/>
+                                <path d="M24 21H31V29H24V21Z" fill="#000000"/>
+                            </svg>
+                        </div>
+                        <span class="footer-logo-text">TUNICO'S GYM</span>
+                    </div>
+                    <p class="footer-desc">
+                        Rede de academias referência em Brasília e Centro-Oeste. Estrutura de alta performance, musculação completa, lutas e modalidades coletivas para quem busca resultado de verdade.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.97-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 2.89 3.5 2.75 1.4-.04 2.67-.93 3.08-2.28.16-.48.2-1.01.2-1.52.03-4.57.01-9.14.02-13.71z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Navigation Links -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title">ACESSO RÁPIDO</h4>
+                    <ul class="footer-menu">
+                        <li><a href="#unidades">Todas as Unidades</a></li>
+                        <li><a href="#aulas">Modalidades & Treinos</a></li>
+                        <li><a href="#planos">Planos & Preços</a></li>
+                        <li><a href="#filosofia">Nossa História</a></li>
+                        <li><a href="#freepass">Resgatar 7 Dias Grátis</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Institutional -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title">INSTITUCIONAL</h4>
+                    <ul class="footer-menu">
+                        <li><a href="https://wa.me/5561998535380?text=Ol%C3%A1,%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20franquias%20Tunico's%20Gym" target="_blank">Seja um Franqueado</a></li>
+                        <li><a href="https://wa.me/5561998535380?text=Ol%C3%A1,%20gostaria%20de%20enviar%20meu%20curr%C3%ADculo%20para%20a%20Tunico's%20Gym" target="_blank">Trabalhe Conosco</a></li>
+                        <li><a href="mailto:ouvidoria@tunicosgym.com.br">Canal de Denúncia</a></li>
+                        <li><a href="#faq">Termos de Uso & Privacidade</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title">FALE CONOSCO</h4>
+                    <ul class="footer-contacts">
+                        <li>
+                            <span class="c-label">Atendimento Geral / SAC:</span>
+                            <a href="mailto:sac@tunicosgym.com.br" class="c-value">sac@tunicosgym.com.br</a>
+                        </li>
+                        <li>
+                            <span class="c-label">WhatsApp Oficial:</span>
+                            <a href="https://wa.me/5561998535380" target="_blank" class="c-value">+55 (61) 99853-5380</a>
+                        </li>
+                        <li>
+                            <span class="c-label">Horário de Atendimento SAC:</span>
+                            <span class="c-value text-muted">Segunda a Sexta, das 08h às 20h</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>© 2026 Tunico's Gym Fitness Club. Todos os direitos reservados. CNPJ: 42.128.904/0001-82.</p>
+                    <p class="reverse-tag">Engenharia Reversa Tunico's Gym • Tema Preto & Branco</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL: FREE PASS SUCESSO -->
+    <div class="modal-backdrop" id="successModal">
+        <div class="modal-card">
+            <button class="modal-close-btn" id="closeSuccessModal">&times;</button>
+            <div class="modal-body text-center">
+                <div class="modal-badge-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="3">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </div>
+                <h3 class="modal-title">FREE PASS GERADO COM SUCESSO!</h3>
+                <p class="modal-text">
+                    Parabéns, <strong id="modalUserName">Atleta</strong>! Seu voucher exclusivo de <strong>7 Dias Grátis</strong> para a unidade <strong id="modalUnitName">Tunico's Gym</strong> está pronto.
+                </p>
+
+                <div class="voucher-ticket">
+                    <div class="ticket-header">TUNICO'S GYM PASS</div>
+                    <div class="ticket-code" id="modalVoucherCode">TG-7DIAS-9824</div>
+                    <div class="ticket-validity">Válido para uso nos próximos 7 dias</div>
+                </div>
+
+                <div class="modal-action-btns">
+                    <a href="#" id="modalWhatsAppLink" target="_blank" class="btn btn-primary btn-block btn-lg">
+                        <span>ABRIR CONFIRMAÇÃO NO WHATSAPP</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.599 2.679-.702c.972.531 1.77.818 2.781.818h.002c3.18 0 5.767-2.586 5.768-5.766.001-3.181-2.585-5.767-5.768-5.767zm7.505 5.767c-.002 4.139-3.368 7.505-7.507 7.505-.002 0-.003 0-.005 0-1.258 0-2.433-.314-3.511-.908l-4.513 1.183 1.207-4.412c-.657-1.127-1.006-2.417-1.006-3.738 0-4.139 3.367-7.505 7.506-7.505 4.14 0 7.507 3.366 7.507 7.505z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: DETALHES DA UNIDADE -->
+    <div class="modal-backdrop" id="unitDetailModal">
+        <div class="modal-card modal-lg">
+            <button class="modal-close-btn" id="closeUnitModal">&times;</button>
+            <div class="modal-body" id="unitModalContent">
+                <!-- Preenchido via script -->
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <div class="floating-whatsapp">
+        <a href="https://wa.me/5561998535380?text=Ol%C3%A1,%20vim%20do%20site%20e%20gostaria%20de%20atendimento%20da%20Tunico's%20Gym" target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn" aria-label="Fale conosco no WhatsApp">
+            <span class="float-tooltip">Dúvidas? Fale Conosco</span>
+            <div class="float-icon-wrap">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="#000000">
+                    <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.599 2.679-.702c.972.531 1.77.818 2.781.818h.002c3.18 0 5.767-2.586 5.768-5.766.001-3.181-2.585-5.767-5.768-5.767zm7.505 5.767c-.002 4.139-3.368 7.505-7.507 7.505-.002 0-.003 0-.005 0-1.258 0-2.433-.314-3.511-.908l-4.513 1.183 1.207-4.412c-.657-1.127-1.006-2.417-1.006-3.738 0-4.139 3.367-7.505 7.506-7.505 4.14 0 7.507 3.366 7.507 7.505z"/>
+                </svg>
+            </div>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
